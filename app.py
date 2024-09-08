@@ -205,11 +205,14 @@
 # if __name__ == '__main__':
 #     app.run(debug=True)
 from flask import Flask, jsonify
+from flask_cors import CORS
 import joblib
 import pandas as pd
 from weather_data import fetch_weather_data, fetch_15_days_weather_data
 
 app = Flask(__name__)
+
+CORS(app)
 
 # Get absolute paths
 import os
