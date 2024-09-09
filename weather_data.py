@@ -74,12 +74,13 @@
     
 #     days_df = pd.DataFrame(days_data)
 #     return days_df
+
 import requests
 import pandas as pd
 from datetime import datetime, timedelta
 
 # Replace with your API key
-API_KEY = 'VUTE5VQL5MCH2S9M3HY9N8LJD'
+API_KEY = 'T8AENELUJYVY4G5ERHTCXQTT2'
 LOCATION = 'Delhi,IN'
 
 def fetch_weather_data(hours_ahead=24):
