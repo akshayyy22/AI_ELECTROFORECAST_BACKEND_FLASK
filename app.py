@@ -125,5 +125,6 @@ def predict_15days():
         print(f"Unexpected error in /predict/15days route: {e}")
         return jsonify({'error': 'Internal Server Error'}), 500
 
-if __name__ == '__main__':
-    app.run(debug=True)
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=5000, debug=True)
+
